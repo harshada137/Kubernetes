@@ -49,3 +49,12 @@ Worker Nodes: Run the application containers.
 -- Google GKE (Google Kubernetes Engine)
 -- DigitalOcean Kubernetes
 -- Red Hat OpenShift
+
+
+📦 Kubernetes vs Docker
+
+| Feature      | Docker               | Kubernetes                                      |
+| ------------ | -------------------- | ----------------------------------------------- |
+| What it does | Runs containers      | Orchestrates multiple containers across servers |
+| Focus        | Single app/container | Managing entire infrastructure of containers    |
+| GUI          | Docker Desktop       | Kubernetes Dashboard                            |
