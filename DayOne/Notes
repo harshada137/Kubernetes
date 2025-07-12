@@ -1,0 +1,51 @@
+🌐 What is Kubernetes (K8s)?
+Kubernetes (often abbreviated as K8s) is an open-source container orchestration platform developed by Google and now maintained by the Cloud Native Computing Foundation (CNCF).
+It automates the deployment, scaling, and management of containerized applications (e.g., apps running in Docker containers) across clusters of servers.
+
+🧠 Why was Kubernetes created?
+Containers (like Docker) are great for packaging applications and their dependencies into a single unit. But when you have to:
+-- Run hundreds or thousands of containers
+-- Spread them across multiple servers
+-- Ensure high availability, scaling, updates, and fault tolerance
+it becomes very complex to manage manually.
+
+Kubernetes solves this complexity.
+
+🧩 Core Concepts in Kubernetes
+1. Cluster
+-- A Kubernetes cluster is a set of machines (nodes) that run containerized applications.
+-- Master Node (Control Plane): Manages the cluster.
+Worker Nodes: Run the application containers.
+ 
+2. Pod 
+-- The smallest deployable unit in K8s.
+-- A Pod can hold one or more containers that share storage, network, and lifecycle.
+-- Containers in the same pod can communicate with each other easily.
+
+3. Node
+-- A node is a single machine (physical or virtual) in the cluster.
+-- It can run multiple pods.
+
+4. Deployment
+-- Manages the desired state of your app (e.g., 3 replicas of a pod).
+-- Ensures the app is always running as specified.
+ 
+5. Service
+-- A permanent IP and DNS name that abstracts a group of pods. 
+-- Helps other apps/services to communicate with your pods even when pods are recreated or rescheduled.
+ 
+6. Volume
+-- Used to store data persistently (survives pod restarts).
+-- Many types: emptyDir, hostPath, nfs, persistentVolumeClaim, etc.
+
+
+🛠 Kubernetes Use With Docker
+-- Kubernetes uses Docker containers (or others like containerd) to run apps.
+-- But it manages them across nodes using controllers, schedulers, and APIs.
+ 
+🚀 Popular Cloud Providers That Support K8s
+-- Amazon EKS (Elastic Kubernetes Service)
+-- Azure AKS (Azure Kubernetes Service)
+-- Google GKE (Google Kubernetes Engine)
+-- DigitalOcean Kubernetes
+-- Red Hat OpenShift
