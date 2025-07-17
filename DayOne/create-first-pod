@@ -1,0 +1,14 @@
+  ## Commands for creating a nginx container from Pod
+  
+  1. kubectl get pods
+  2. kubectl get pods -A
+  3. nano kubefile.yml
+  4. kubectl apply kubefile.yml
+  5. kubectl apply -f kubefile.yml
+  6. history
+  7. cat kubefile.yml
+  8. nano kubefile.yml
+  9. kubectl apply -f kubefile.yml
+  10. cat kubefile.yml
+  11. history
+
