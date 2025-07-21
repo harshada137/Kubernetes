@@ -1,0 +1,41 @@
+🔁 What is a **ReplicationController** in Kubernetes?
+
+A **ReplicationController (RC)** is a **legacy Kubernetes object** that ensures a **specified number of pod replicas are always running**.
+
+---
+
+✅ **Main Purpose**
+
+To **maintain pod availability** — if a pod goes down or is deleted, the RC automatically creates a new one to replace it.
+
+---
+
+🛠️ **Key Features**
+
+| Feature                | Description                                                     |
+| ---------------------  | --------------------------------------------------------------- |
+| 🔁 **Self-healing**    | Ensures the desired number of pods are always running.          |
+| ➕ **Scaling**         | You can increase/decrease the number of replicas dynamically.   |
+| 🔍 **Pod Management**  | Selects pods using a **label selector**.                        |
+| 📦 **Template**        | Contains the pod definition (metadata, spec, containers, etc.). |
+
+---
+
+📄 Example Use Case
+
+You want **3 instances of an NGINX server** running all the time. If one fails, the RC spins up a new one automatically to keep the count at 3.
+
+---
+
+⚠️ Deprecation Note
+
+> 🔹 **ReplicationController is now considered legacy.**
+> 🔸 Most modern Kubernetes deployments use **Deployments**, which offer more features like rolling updates and rollback.
+
+---
+
+📌 Summary
+
+* ReplicationController keeps a **fixed number of identical pods** running.
+* It uses a **selector** to match the pods it manages.
+* Mostly replaced by **Deployments**, which are more powerful and flexible.
